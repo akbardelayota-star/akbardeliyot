@@ -1,5 +1,5 @@
 function goLogin() {
-    window.location.href = "login/index.html";
+    window.location.href = "/akbardeliyot/login/index.html";
 }
 
 function logout() {
