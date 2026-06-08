@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akbar Gucci — Perhiasan Emas Berkelas</title>
-    
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
@@ -24,7 +22,10 @@
                     <a href="#craftsmanship">Keahlian</a>
                     <a href="#contact">Kunjungi Kami</a>
                     <a href="#contact" class="nav-cta">Buat Janji</a>
-                    <a href="login/index.html" class="nav-cta">Masuk</a>
+                    <p id="userInfo" style="color:white; margin:0; display:inline-block; font-size:14px;"></p>
+                    <div id="authArea" style="display:inline-block;">
+                        <button onclick="goLogin()" class="nav-cta" style="cursor:pointer; border:none; background:none;">Login</button>
+                    </div>
                 </nav>
                 
                 <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">
@@ -104,9 +105,7 @@
                 </div>
                 <div class="featured-content">
                     <p class="text-label featured-label">Perhiasan Pilihan</p>
-                    <h2 class="heading-display featured-title">
-                        Liontin Aurora
-                    </h2>
+                    <h2 class="heading-display featured-title">Liontin Aurora</h2>
                     <p class="text-body featured-description">
                         Terinspirasi dari tarian cahaya kutub yang memukau, 
                         Liontin Aurora menangkap gerakan cahaya yang lembut 
@@ -147,7 +146,6 @@
                 </div>
                 <a href="#" class="btn-text">Lihat Semua Koleksi</a>
             </div>
-            
             <div class="collections-grid">
                 <div class="collection-item">
                     <div class="collection-image">
@@ -204,9 +202,7 @@
             <div class="story-grid">
                 <div class="story-content">
                     <p class="text-label story-label">Warisan Kami</p>
-                    <h2 class="heading-display story-title">
-                        Tiga Generasi Keahlian Emas
-                    </h2>
+                    <h2 class="heading-display story-title">Tiga Generasi Keahlian Emas</h2>
                     <p class="text-body story-text">
                         Didirikan pada tahun 1987 oleh pengrajin emas ahli Henri Beaumont, 
                         Akbar Gucci tetap menjadi atelier keluarga yang berdedikasi pada 
@@ -242,9 +238,7 @@
             <div class="craft-grid">
                 <div class="craft-content">
                     <p class="text-label">Seni Penciptaan</p>
-                    <h2 class="heading-display craft-title">
-                        Dibuat dengan Tangan, Dikenang Selamanya
-                    </h2>
+                    <h2 class="heading-display craft-title">Dibuat dengan Tangan, Dikenang Selamanya</h2>
                     <p class="text-body craft-text">
                         Setiap perhiasan Akbar Gucci menjalani perjalanan teliti 
                         dari konsep hingga penyelesaian. Para pengrajin kami menggunakan 
@@ -291,7 +285,6 @@
                 <h2 class="heading-display testimonials-title">Disayangi Banyak Orang</h2>
                 <p class="text-body testimonials-subtitle">Apa yang pelanggan kami katakan tentang pengalaman bersama Akbar Gucci</p>
             </div>
-            
             <div class="testimonials-grid">
                 <div class="testimonial-card">
                     <div class="testimonial-stars">
@@ -351,8 +344,6 @@
     <!-- Kontak -->
     <section class="contact" id="contact">
         <div class="container">
-
-            <!-- Google Maps Embed -->
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.4317569539643!2d106.82027491476905!3d-6.193027495520028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f4211427238f%3A0xcde1bb32224e1f9f!2sGucci%20Plaza%20Indonesia!5e0!3m2!1sid!2sid!4v1678886400000!5m2!1sid!2sid"
                 width="100%"
@@ -362,20 +353,16 @@
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>
-
             <div class="contact-grid">
                 <div class="contact-content">
                     <p class="text-label">Kunjungi Atelier Kami</p>
-                    <h2 class="heading-display contact-title">
-                        Rasakan Pengalaman Akbar Gucci
-                    </h2>
+                    <h2 class="heading-display contact-title">Rasakan Pengalaman Akbar Gucci</h2>
                     <p class="text-body contact-text">
                         Kami mengundang Anda untuk mengunjungi atelier kami 
                         untuk konsultasi pribadi. Temukan koleksi kami dalam 
                         suasana yang intim dan bekerja sama dengan desainer 
                         kami untuk menciptakan sesuatu yang benar-benar unik.
                     </p>
-                    
                     <div class="contact-details">
                         <div class="contact-item">
                             <p class="contact-item-label">Alamat</p>
@@ -393,9 +380,14 @@
                         </div>
                         <div class="contact-item">
                             <p class="contact-item-label">Kontak</p>
-                            <p class="contact-item-value">
-                                <a href="mailto:akbardelayota@gmail.com">akbardelayota@gmail.com</a>
-                            </p>
+                            <p class="contact-item-value">akbardelayota@gmail.com</p>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 
